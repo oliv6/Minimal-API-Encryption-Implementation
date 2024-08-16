@@ -83,10 +83,11 @@ Overall, this implementation of Blowfish provides a flexible and secure method f
 
 </p>
 
-<h3>Other Classes</h3>
+<p><h3>Other Classes</h3>
 <ul>
-  <li>Configuration Class: The class defines the setters and getters for reading the key stored in appsettings.json file.</li>
+  <li>Configuration Class: The class defines the setters and getters for reading the key stored in appsettings.json file. We use this class to deserialize the JSON and create the readable object from JSON string</li>
   <li>ConvertToJson Class: This class defines variables that needs to be displayed in the JSON format and is used to output API results in JSON.</li>
   <li>Appsettings.json file: This file stores the keys for AES and Blowfish enryptions implemented. This is solely for simplicity purpose and not to be praticed in real     
       world</li>
 </ul>
+</p>
