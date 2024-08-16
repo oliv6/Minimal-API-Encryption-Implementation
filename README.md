@@ -50,6 +50,8 @@ Decrypt(string encryptedText, string IV, string key): Decrypts the Base64-encode
 The results of encryption and decryption operations are displayed in JSON format via a minimal API, providing a clear and structured way to view the plaintext, encrypted text, and decrypted text.</p>
 
 </ol>
+
+Overall, by implementing AES, I learned various important topics in .NET minimal API and has advanced my skills in C#. I also learned how important it is to add IVs to enryption schemes to thwart various sophisticated cryptanalysis attacks.
 </p>
 
 <p><h3>EnryptBlowfish Class</h3>
@@ -79,7 +81,9 @@ The class can generate a random IV for CBC and CTR modes, ensuring that each enc
 <h4><li>Conversion Methods: </li></h4>
 Includes utilities for converting between byte arrays and hexadecimal strings, facilitating easy input/output operations.
 
-Overall, this implementation of Blowfish provides a flexible and secure method for encrypting and decrypting data, suitable for scenarios where strong encryption is required.
+</ol>
+
+Overall, this implementation of Blowfish provides a flexible and secure method for encrypting and decrypting data, suitable for scenarios where strong encryption is required. I also learned how the Blowfish algorithm works and how it is a good alternative to DES or 3DES.
 
 </p>
 
