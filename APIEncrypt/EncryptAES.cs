@@ -12,6 +12,10 @@ namespace APIEncrypt
         {
             var key = extractKeyValue(32); // 256
             Aes cipher = CreateCipher(key);
+            
+            // Generate a random IV
+            cipher.GenerateIV();
+            
             var IVBase64 = Convert.ToBase64String(cipher.IV);
             return (key, IVBase64);
         }
