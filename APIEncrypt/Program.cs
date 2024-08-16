@@ -1,15 +1,13 @@
 using System.Text.Json;
 using APIEncrypt;
 
-
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
-
 
 ConvertToJson jsonFormat = new ConvertToJson(); //All returned output in minimal API needs to be in json format.
 
 
-/*AES Encryption
+/*  AES Encryption
 IV is also displayed in the minimal API. IV should never be displayed as such. 
 This is present here only to test out and analyze the IV associated with the encrypted text. 
 The corresponding IV of an encrypted text if stored and not randomly generated, should also be encrypted.
@@ -40,7 +38,7 @@ app.MapGet("/Encryption/AES", () => new {
 
 
 
-/*Blowfish Encryption
+/*  Blowfish Encryption
 Reads key from configuration file by deserializing json file*/
 
 string json = File.ReadAllText("appsettings.json");
@@ -62,8 +60,6 @@ app.MapGet("/Encryption/Blowfish", () => new {
     DecryptedText = jsonFormat.DecryptedTextBF,
 
 }) ;
-
-
 
 app.Run();
 
